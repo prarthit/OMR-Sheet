@@ -105,3 +105,20 @@ button:active {
 button:focus {
 	outline: none;
 }
+
+/* Media queries for responsive design */
+@media screen and (max-width: 320px) {
+	body {
+		font-size: 12px;
+	}
+	.checkmark {
+		width: 0.85em;
+		height: 0.85em;
+	}
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+	body {
+		font-size: 14px;
+	}
+}
