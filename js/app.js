@@ -21,9 +21,22 @@ function jsload() {
         td.innerHTML = i + '.';
         inputs.forEach(element => {
             element.name = i;
+            element.onclick = toggleRadio;
         });
 
         table.appendChild(trow);
         trow = trow.cloneNode(true);
     }
+}
+
+function toggleRadio() {
+    thisRadio = this
+    if (thisRadio.classList.contains("imChecked")) {
+        thisRadio.classList.remove("imChecked");
+        thisRadio.checked = false;
+    }
+    else {
+        thisRadio.checked = true;
+        thisRadio.classList.add("imChecked");
+    };
 }
