@@ -8,4 +8,46 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
+	max-width: 500px;
+	width: 80%;
+	margin: 4% auto;
+	text-align: center;
+	cursor: default; /* To avoid the text cursor and keep pointer */
+	display: flow-root; /* It always establishes a new inline-block formatting context for its contents */
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+	-webkit-tap-highlight-color: transparent; /* To remove blue highlight color on tap on android devices */
+}
+
+main {
+	padding: 0px 1em 1em;
+}
+
+/* Table Style */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+td:nth-of-type(1) {
+	width: 14%;
+}
+
+/* Button Style */
+button {
+	background: none;
+	border-radius: 25px;
+	padding: 10px;
+	border: 1pt solid #ddd;
+	box-shadow: 0 7px #e5e5e5;
+	margin-bottom: 1.5em;
+}
+
+button:active {
+	box-shadow: 0 5px #e5e5e5;
+	transform: translateY(2px);
+}
+
+button:focus {
+	outline: none;
 }
