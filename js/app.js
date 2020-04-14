@@ -27,6 +27,8 @@ function jsload() {
         table.appendChild(trow);
         trow = trow.cloneNode(true);
     }
+
+    document.querySelector("button").onclick = btnclick;
 }
 
 function toggleRadio() {
@@ -39,4 +41,14 @@ function toggleRadio() {
         thisRadio.checked = true;
         thisRadio.classList.add("imChecked");
     };
+}
+
+function btnclick() {
+    html2canvas(document.body).then(function (canvas) {
+        // Export canvas as a blob 
+        canvas.toBlob(function (blob) {
+            // Generate file download
+            window.saveAs(blob, "OMR.png");
+        });
+    });
 }
