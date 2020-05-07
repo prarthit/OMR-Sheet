@@ -3,7 +3,7 @@ A responsive website to fill out OMR sheets
 
 ## Getting Started
 
-You may either run this project locally without server by opening **index.html** file in your browser or by creating a server and deploying it.
+You may either run this project locally without server just by downloading `master` branch files and opening **index.html** file in your browser or by creating a server and deploying it. To server the file using backend, switch to `Backend` branch and download the files. Follow below instructions for running it with backend server.
 
 ### Prerequisites
 
