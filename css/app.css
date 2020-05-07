@@ -18,6 +18,21 @@ body {
 	-webkit-tap-highlight-color: transparent; /* To remove blue highlight color on tap on android devices */
 }
 
+label[for=num_ques] {
+	display: inline;
+}
+
+input[type="number"] {
+	display: inline-block;
+	padding: 5px 10px;
+	width: 70px;
+	margin-bottom: 4%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid darkgray;
+	outline: none;
+}
+
 main {
 	padding: 0px 1em 1em;
 }
@@ -63,7 +78,7 @@ tr:hover {
 }
 
 /* Radio Button Style */
-input {
+input[type="radio"] {
 	opacity: 0;
 	position: absolute;
 }
